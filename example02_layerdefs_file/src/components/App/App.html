@@ -1,0 +1,13 @@
+<div style="position:fixed;width:100vw;height:100vh;">
+
+    <Data name="homeExtent" :value="[7.8,49.77,9.62,48.95]" />
+    <DataMap name="map" />
+
+    <DataMapLayer name="basemap" :map="local.map" :visible="true" :layerDef='local.layerdef' layerId="osm" />
+    <DataMapLayer name="mrn_districts" :map="local.map" :visible="true" :layerDef='local.layerdef' layerId="mrn_districts" />
+
+    <DataJsonFetch name="layerdef" url="layerdefs.json" />
+
+    <MapPanel :map="local.map" :initialExtent="local.homeExtent"/>
+
+</div>

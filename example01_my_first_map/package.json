@@ -1,0 +1,37 @@
+{
+  "name": "tivigi_example01_my_first_map",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "TypeScript",
+    "Vue.js",
+    "OpenLayers",
+    "GIS",
+    "components",
+    "framework"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve  --host 0.0.0.0",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "tivigi": "git+https://github.com/metropolregion-rhein-neckar/tivigi"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.0.3",
+    "@vue/cli-plugin-babel": "^4.5.8",
+    "@vue/cli-plugin-typescript": "^4.5.8",
+    "@vue/cli-plugin-unit-mocha": "^4.5.8",
+    "@vue/cli-service": "^4.5.8",
+    "@vue/test-utils": "^1.1.1",
+    "chai": "^4.2.0",
+    "file-loader": "^6.2.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.0.5",
+    "typescript": "^4.0.5",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

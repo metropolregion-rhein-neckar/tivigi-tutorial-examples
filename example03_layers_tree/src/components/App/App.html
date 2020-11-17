@@ -1,0 +1,20 @@
+<div style="position:fixed;width:100vw;height:100vh;">
+
+    <Data name="showLayerTree" :value="false"/>
+    <DataMap name="map" />
+    <Data name="homeExtent" :value="[7.8,49.77,9.62,48.95]" />
+
+    <DataJsonFetch name="layerDef" url="layerdefs.json" />
+    <DataJsonFetch name="layerTreeDef" url="layertree.json" />
+
+    <div style="padding:8px;">
+        <Superbutton label="Layers" icon="tivigi/img/tree.svg" v-model="local.showLayerTree" :set="true" :unset="false" />
+    </div>
+
+    <Modal class="Card floating" :show.sync="local.showLayerTree" style="z-index:1;max-height:70%;width:300px;left:4px;top:64px;overflow:auto;position:absolute;" :allowOutsideInteraction="true">  
+        <LayerTree :treeDef="local.layerTreeDef" :layerDef="local.layerDef" :map="local.map"/>
+    </Modal>
+
+    <MapPanel :map="local.map" :initialExtent="local.homeExtent" />
+
+</div>

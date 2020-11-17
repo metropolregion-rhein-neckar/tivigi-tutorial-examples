@@ -1,0 +1,13 @@
+{
+    "treeLabel": "Karten",
+    "children": [
+        {
+            "treeLabel": "OpenStreetMap",
+            "layerId": "osm"
+        },
+        {
+            "treeLabel": "Districts of MRN",
+            "layerId": "mrn_districts"
+        }
+    ]
+}

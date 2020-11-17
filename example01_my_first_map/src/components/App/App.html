@@ -1,0 +1,21 @@
+<div style="position:fixed;width:100vw;height:100vh;">
+    
+    <Data name="homeExtent" :value="[7.8,49.77,9.62,48.95]" />
+    <DataMap name="map" />
+    
+    <DataMapLayer name="basemap" :map="local.map" :visible="true" :layerDef='   { "osm": {
+        "baseUrl": "https://ows.terrestris.de/osm/service",
+        "group": "baselayers",
+        "level": 0,
+        "showFeatureInfo": false,
+        "showLegend": false,
+        "title": "OpenStreetMap: Farbe",
+        "type": "wms-tiled",
+        "urlParams": {
+            "layers": "OSM-WMS"
+        }
+    }}' layerId="osm" />
+
+    <MapPanel :map="local.map" :initialExtent="local.homeExtent" />
+
+</div>

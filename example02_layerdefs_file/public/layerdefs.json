@@ -1,0 +1,25 @@
+{
+    "osm": {
+        "baseUrl": "https://ows.terrestris.de/osm/service",
+        "group": "baselayers",
+        "level": 0,
+        "showFeatureInfo": false,
+        "showLegend": false,
+        "title": "OpenStreetMap",
+        "type": "wms-tiled",
+        "urlParams": {
+            "layers": "OSM-WMS"
+        }
+    },
+
+    "mrn_districts": {
+        "baseUrl": "data/mrn_districts.geojson",
+        
+        
+        "level": 1,
+        
+        "title": "Districts of Metropolregion Rhein-Neckar",
+        "type": "geojson"
+       
+    }
+}

@@ -1,8 +1,3 @@
-
-Release 4 "Steinweiler" - 30.07.2020 
-
-# vue-typescript-new
-
 ## Project setup
 ```
 npm install
